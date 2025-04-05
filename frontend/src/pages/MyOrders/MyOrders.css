@@ -1,0 +1,73 @@
+.my-orders {
+    margin: 50px 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.my-orders-order {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 2fr 1fr;
+    align-items: center;
+    gap: 20px; /* Adjusted gap to fit content better */
+    font-size: 16px; /* Adjust font size to a better starting point */
+    padding: 15px 20px;
+    color: #454545;
+    border: 1px solid tomato;
+    border-radius: 8px; /* Optional: For rounded corners */
+}
+
+.my-orders-order img {
+    width: 50px;
+    height: auto;
+}
+
+.my-orders-order p {
+    margin: 0;
+    font-size: 14px; /* Ensuring uniform text size */
+}
+
+.my-orders-order p span {
+    color: tomato;
+}
+
+.my-orders-order p b {
+    font-weight: 500;
+    color: #454545;
+}
+
+.my-orders-order button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #ffe1e1;
+    cursor: pointer;
+    color: #454545;
+    font-size: 14px; /* Set button text to match font size */
+    transition: background-color 0.3s ease;
+}
+
+.my-orders-order button:hover {
+    background-color: #ffcccc; /* Add hover effect */
+}
+
+@media (max-width: 900px) {
+    .my-orders-order {
+        grid-template-columns: 1fr 2fr 1fr; /* Adjust grid for mobile view */
+        row-gap: 10px; /* Better row spacing for mobile */
+        font-size: 14px; /* Set font size to smaller for mobile */
+    }
+
+    .my-orders-order p {
+        font-size: 12px; /* Slightly smaller font size for mobile */
+    }
+
+    .my-orders-order button {
+        font-size: 12px; /* Adjust button font size */
+        padding: 8px 12px; /* Adjust button padding for smaller screens */
+    }
+}
